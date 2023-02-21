@@ -1,0 +1,19 @@
+{
+	"todos": [
+		{
+			"id": 1,
+			"title": "Shahida's Request.",
+			"completed": false
+		},
+		{
+			"id": 2,
+			"title": "DD's Request.",
+			"completed": false
+		},
+		{
+			"id": 3,
+			"title": " Company Setup",
+			"completed": false
+		}
+	]
+}
