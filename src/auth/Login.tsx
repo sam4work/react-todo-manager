@@ -8,8 +8,7 @@ const Login = () : JSX.Element => {
 
 	const [email, setEmail] = useState('hindolosam@yahoo.co.uk')
 	const [password, setPassword] = useState('Password1234')
-	const [errors, setErrors] = useState([])
-	const [status, setStatus] = useState(null)
+	const [errors, setErros] = useState([])
 
 	const [isSubmitting,setIsSubmitting] = useState<boolean>(false)
 	const navigate = useNavigate()
@@ -22,9 +21,10 @@ const Login = () : JSX.Element => {
 
 	const handleLoginForm = async (event:FormEvent) => {
 		event.preventDefault()
+		const payload = {email,password}
+		// setIsSubmitting(true)
 
-
-		login({setErrors,setStatus,email,password})
+		await login(payload)
 
 		if(!error){
 			// setIsSubmitting(false)
@@ -51,7 +51,6 @@ const Login = () : JSX.Element => {
 
 												<br />
 												{/* {JSON.stringify(document.cookie)} */}
-												{error}
 										</h2>
 							
 								</div>
