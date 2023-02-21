@@ -49,8 +49,6 @@ const Login = () : JSX.Element => {
 										<h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200">
 												Sign in to your account
 
-												<br />
-												{/* {JSON.stringify(document.cookie)} */}
 										</h2>
 							
 								</div>
